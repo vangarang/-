@@ -1,3 +1,4 @@
+<<<<<<< HEAD:MOP_window/Main.py
 # -*-coding:utf-8-*-
 ########################################
 # -- Module Loading
@@ -41,3 +42,26 @@ if __name__ == '__main__':
     # spaCy : PoS-Tagging with Lemmatizing
     # print(Spacy.pos(en))
     # print(Spacy.nouns(en))
+=======
+# -*-coding:utf-8-*-
+########################################
+# -- 사용법
+########################################
+
+
+########################################
+# -- Module Loading
+########################################
+import module.mKLT as KLT
+kr = "인생은 가까이서 보면 비극이지만 멀리서 보면 희극이다."
+
+if __name__ == '__main__':
+    # -- 한글 MOP
+
+    # -- KLT : PoS-Tagging
+    print('KLT 형태소 분석 :')
+    print(KLT.pos(kr)) # 형태소+빈도 수 추출
+
+    print('KLT 명사 추출 : ')
+    print(KLT.nouns(kr)) # 명사 추출
+>>>>>>> 677b0d585865acaebb630c57f6645a9eca9f7c4d:MOP/Main.py
